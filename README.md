@@ -1,2 +1,16 @@
 # sample-auth-solana
-Solana App Integration sample app
+Sample Solana App integrating with the Arcana Auth SDK
+
+## Usage
+
+```sh
+
+yarn
+
+```
+
+```sh
+
+yarn start
+
+```
