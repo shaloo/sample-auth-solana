@@ -10,9 +10,6 @@ const auth = new AuthProvider(
 // provider = window.phantom?.solana || window.braveSolana
 provider = auth.provider;
 
-window.Buffer = window.ethereumjs.Buffer.Buffer;
-globalThis.Buffer = window.ethereumjs.Buffer.Buffer;
-
 window.onload = async () => {
   try {
     console.time("auth_init");
@@ -24,6 +21,10 @@ window.onload = async () => {
   } catch (e) {
     console.log({ e });
   }
+
+window.Buffer = window.ethereumjs.Buffer.Buffer;
+globalThis.Buffer = window.ethereumjs.Buffer.Buffer;
+
 };
 
 const reqElement = document.getElementById("request");
