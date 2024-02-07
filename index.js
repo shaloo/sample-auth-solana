@@ -2,11 +2,12 @@ const { AuthProvider } = window.arcana.auth;
 
 let provider;
 let solanaP;
-const auth = new AuthProvider(
-  "xar_dev_e69388ef7f3794cc25803164fe307e90720f6695",
-  //"xar_dev_21bf779bf422356b223066c76f194f94ca473688",
-  //"xar_dev_82ff3f4305701052e73a60c6fda4c3d3ed1fda33"
-);
+const auth = new AuthProvider( // solana app mainnet
+  "xar_live_9306202cbac483d3f1840340302282d5c82d5a55", { 
+    network: "mainnet",
+    theme: "light"
+   });
+
 // provider = window.phantom?.solana || window.braveSolana
 provider = auth.provider;
 
